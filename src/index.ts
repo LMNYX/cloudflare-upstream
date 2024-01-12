@@ -1,5 +1,3 @@
-import { Server } from "@web/server";
+import Output from "@utils/output";
 
-const server: Server = new Server();
-
-server.start();
+Output.Log("Starting listening...");
