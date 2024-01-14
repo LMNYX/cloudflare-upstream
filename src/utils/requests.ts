@@ -4,7 +4,7 @@ export default async function checkIfAlive(domain: string): Promise<boolean>
 {
     try
     {
-        let result = await axios.get(`https://${domain}/`);
+        let result = await axios.get(`https://${domain}/?_=${Math.random()}`);
         if (result.status != 200)
             return false;
     }

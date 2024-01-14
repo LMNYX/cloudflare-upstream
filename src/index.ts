@@ -37,5 +37,5 @@ var isDead: boolean = false;
             }
             isDead = true;
         }
-    }, 5000);
+    }, checkInterval);
 })().catch(Output.Error);
